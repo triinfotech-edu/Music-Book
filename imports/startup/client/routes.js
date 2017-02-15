@@ -6,9 +6,18 @@ import '../../ui/layouts/MainLayout/MainLayout';
 
 //pages
 import '../../ui/pages/Home/Home';
+import '../../ui/pages/NewAlbum/NewAlbum';
 
 FlowRouter.route('/', {
-    action() {
-        BlazeLayout.render('MainLayout', { main: 'Home' });
-    }
+  name: 'Home',
+  action() {
+    BlazeLayout.render('MainLayout', { main: 'Home' });
+  }
+})
+
+FlowRouter.route('/new/album', {
+  name: 'NewAlbum',
+  action() {
+    BlazeLayout.render('MainLayout', { main: 'NewAlbum' });
+  }
 })
