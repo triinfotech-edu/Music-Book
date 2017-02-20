@@ -30,3 +30,5 @@ aldeed:autoform
 cfs:standard-packages
 cfs:autoform
 cfs:filesystem
+arillo:flow-router-helpers
+zimme:active-route
