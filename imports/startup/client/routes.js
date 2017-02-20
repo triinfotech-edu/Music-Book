@@ -7,6 +7,7 @@ import '../../ui/layouts/MainLayout/MainLayout';
 //pages
 import '../../ui/pages/Home/Home';
 import '../../ui/pages/NewAlbum/NewAlbum';
+import '../../ui/pages/ArtistDetail/ArtistDetail';
 
 FlowRouter.route('/', {
   name: 'Home',
@@ -19,5 +20,12 @@ FlowRouter.route('/new/album', {
   name: 'NewAlbum',
   action() {
     BlazeLayout.render('MainLayout', { main: 'NewAlbum' });
+  }
+})
+
+FlowRouter.route('/artist/:_id', {
+  name: 'ArtistDetail',
+  action() {
+    BlazeLayout.render('MainLayout', { main: 'ArtistDetail' });
   }
 })
